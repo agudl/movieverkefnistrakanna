@@ -5,6 +5,27 @@ body {
     overflow: hidden;
 }
 
+/*IE9*/
+*::selection
+{
+    background-color:transparent;
+}
+*::-moz-selection
+{
+    background-color:transparent;
+}
+*
+{
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    /*IE10*/
+    -ms-user-select: none;
+    user-select: none;
+
+    /*You just need this if you are only concerned with android and not desktop browsers.*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 .btn {
     margin: 4% auto;
     display: flex;
@@ -320,7 +341,8 @@ section .genreHeading {
 }
 
 .movieDiv .movieDetails div ul {
-    margin-top: 5%;
+    margin-top: 20%;
+    font-size: 60%;
     margin-left: 0px;
 }
 
@@ -479,19 +501,30 @@ footer ul li {
     }
 
     .movieDiv .moviePoster {
-    width: 200px;
-    bottom: 0%;
+    width: 164px;
+    bottom: 10%;
+    left: 6%;
     }
+
+    .reveal {
+    background-color: transparent;
+    width: 95%;
+}
 
     .movieDiv .vote-circle {
     width: 70px;
     height: 70px;
-    bottom: 18%;
+    bottom: 47%;
+    font-size: 1.2em;
 }
 
 .banner .bannerText {
     font-size: 80%;
     margin-top: 46px;
+}
+
+.slick-prev:before, .slick-next:before {
+    display: none;
 }
 
 
@@ -505,10 +538,14 @@ footer ul li {
         box-shadow: 0px 0px 0px #fff;
     }
 
+    #main-content {
+        margin-top: 10%;
+    }
+
     #main-content .slick-slide:hover {
         box-shadow: 0px 0px 25px #000;
         transition: .4s;
-        width: 200px;
+        width: 270px;
     }
 
     .searchCircle {
@@ -543,13 +580,15 @@ footer ul li {
         margin-left: 5%;
     }
 
-    .movieDiv .moviePoster {
-    bottom: -5%;
+    .movieDiv .basicInfo {
+        float: right;
+        margin-top: 0px;
+        font-size: 60%;
+        text-align: left;
     }
 
-    .movieDiv .basicInfo {
-    margin-top: 41%;
-    text-align: center;
+    .slick-arrow {
+        display: none;
     }
 
     .movieDiv .movieStoryline {
@@ -557,4 +596,8 @@ footer ul li {
     margin-left: 2%;
     text-align: center;
     }
+
+    .btn {
+    margin: 4% auto 21%;
+}
 }

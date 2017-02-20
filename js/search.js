@@ -69,6 +69,11 @@ $('.slider').on('moved.zf.slider', function(){
         $(".seemore").hide();
   });
 
+  $(".vote-circle").click(function() {
+      $('.search').fadeIn();
+      $("body").css("overflow", "hidden");
+  });
+
   $(".seeless").click(function() {
     $('.row1').hide();
       $('.seeless').hide();

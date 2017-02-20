@@ -125,7 +125,10 @@ function getMovie(movieid) {
             let response = JSON.parse(r.responseText);
 
             $(".banner").css("background-image", "url(http://image.tmdb.org/t/p/original" +response.backdrop_path+ ")");
-            $(".banner").css("height", "90vh");
+            $(".banner").css("height", "500px");
+            if (window.matchMedia( "(max-width: 760px)" )) {
+                $(".banner").css("height", "300px");
+            }
             $(".banner").css("background-size", "cover");
             $(".banner").css("box-shadow", "0px 0px 0px");
 
@@ -154,7 +157,7 @@ function getMovie(movieid) {
             document.body.appendChild(movieDiv);
 
             let basicInfo = document.createElement("div");
-            basicInfo.className += "basicInfo medium-7 medium-offset-5 small-12";
+            basicInfo.className += "basicInfo medium-7 medium-offset-5 small-5";
 
             let movieTitle = document.createElement("h1");
             movieTitle.innerHTML = response.original_title;
@@ -306,7 +309,7 @@ function getMovie(movieid) {
                     $(similarMovieDiv).slick({
                         infinite: false,
                         slidesToShow: 4,
-                        slidesToScroll: 4,
+                        slidesToScroll: 1,
                         variableWidth: true
                     });
                 };

@@ -1,6 +1,10 @@
 $(document).ready( function() {
     $(document).foundation();
 
+    // $(".searchCircle").css("display", "none");
+
+    $(".reveal").css("top","25%");
+
     setTimeout(function() {
         $(".banner").css("height", "60vh");
         $(".navigation").css("display", "block");
@@ -25,6 +29,8 @@ $(document).ready( function() {
    if (mq.matches) {
 
        $("iframe").attr("height", "40%");
+
+       $(".banner").css("height", "90vh");
 
        $(window).scroll(function () {
            if ($(this).scrollTop() > 300) {
