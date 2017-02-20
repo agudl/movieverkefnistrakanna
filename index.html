@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Slick Playground</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/search.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navigation">
+            <img src="img/movie-box.svg" alt="" class="logo">
+            <img src="img/search.svg" alt="" class="searchlogo">
+        </div>
+    </header>
+    <div class="banner">
+        <div class="bannerText">
+            <h2>Welcome to MovieBox</h2>
+            <h3>Your favorite movie source</h3>
+        </div>
+        <a href="#" data-reveal-id="myModal" data-open="exampleModal1">
+            <div class="playButton" >
+                <svg width="125" height="125" viewBox="0 0 125 125" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+                    <g id="Canvas" transform="translate(-1626 -2010)" figma:type="canvas">
+                        <g id="play button" style="mix-blend-mode:normal;" figma:type="frame">
+                            <g id="Ellipse 4" style="mix-blend-mode:normal;" figma:type="ellipse">
+                                <mask id="mask0_outline_ins">
+                                    <use xlink:href="#path0_fill" fill="white" transform="translate(1626 2010)"/>
+                                </mask>
+                                <g mask="url(#mask0_outline_ins)">
+                                    <use xlink:href="#path1_stroke_2x" transform="translate(1626 2010)" fill="#E5E5E5" fill-opacity="0.5" style="mix-blend-mode:normal;"/>
+                                </g>
+                            </g>
+                            <g id="Polygon" style="mix-blend-mode:normal;" figma:type="vector">
+                                <use id="playClick" xlink:href="#path2_fill" transform="matrix(6.12323e-17 1 -1 6.12323e-17 1725 2038)" fill="#E5E5E5" fill-opacity="0.5" style="mix-blend-mode:normal;"/>
+                            </g>
+                        </g>
+                    </g>
+                    <defs>
+                        <path id="path0_fill" d="M 125 62.5C 125 97.0178 97.0178 125 62.5 125C 27.9822 125 0 97.0178 0 62.5C 0 27.9822 27.9822 0 62.5 0C 97.0178 0 125 27.9822 125 62.5Z"/>
+                        <path id="path1_stroke_2x" d="M 121 62.5C 121 94.8087 94.8087 121 62.5 121L 62.5 129C 99.2269 129 129 99.2269 129 62.5L 121 62.5ZM 62.5 121C 30.1913 121 4 94.8087 4 62.5L -4 62.5C -4 99.2269 25.7731 129 62.5 129L 62.5 121ZM 4 62.5C 4 30.1913 30.1913 4 62.5 4L 62.5 -4C 25.7731 -4 -4 25.7731 -4 62.5L 4 62.5ZM 62.5 4C 94.8087 4 121 30.1913 121 62.5L 129 62.5C 129 25.7731 99.2269 -4 62.5 -4L 62.5 4Z"/>
+                        <path id="path2_fill" d="M 34.641 0L 69.282 60L 0 60L 34.641 0Z"/>
+                    </defs>
+                </svg>
+
+            </div>
+        </a>
+        <div class="bannerPolygon">
+
+        </div>
+    </div>
+
+    <div id="main-content">
+
+    </div>
+    <div id="movieContent">
+
+    </div>
+    <div class="loading">
+        <img src="img/movie-box.svg" alt="">
+    </div>
+    <div class="searchCircle">
+
+    </div>
+
+    <a class="btn" id="seeMore">SEE MORE</a>
+
+    <footer>
+        <img src="img/movie-box.svg" alt="">
+        <ul>
+            <li>About</li>
+            <li>Term of Use</li>
+            <li>FAQ</li>
+            <li>Privacy</li>
+            <li>Contact Us</li>
+        </ul>
+    </footer>
+
+
+    <div id="myModal" class="reveal-modal large" data-reveal aria-labelledby="videoModalTitle" aria-hidden="true" role="dialog">
+  <h2 id="videoModalTitle">This modal has video</h2>
+  <div class="flex-video widescreen vimeo">
+    <iframe width="100%" height="100%" src="" frameborder="0" allowfullscreen></iframe>
+  </div>
+  </div>
+
+  <!---Triggers the modals -->
+  <div class="reveal" id="exampleModal1" data-reveal>
+        <iframe width="100%" height="100%" src="" frameborder="0" allowfullscreen></iframe>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+
+
+      <div class="search">
+
+          <div class="closeIconContainer">
+        <div class="closeMe">
+          &times;
+        </div>
+        </div>
+        <div class="leitainput">
+            <input  class="leitainput1" type="text" name="" placeholder="Search movies"> <img class="leitmynd"src="img/LEIT.svg" alt="">
+        </div>
+        <a class="advancedSearch">Advanced search</a>
+        <div id="searchContent">
+
+        </div>
+        <div class="container">
+      <h1 class="stafirsearch">Rating</h1>
+      <div class="row">
+      <h1 class="byrjun">0</h1>
+      <h1>10</h1>
+      </div>
+
+      <div class="column row">
+    <div class="slider" data-slider data-initial-start="0" data-initial-end="100">
+      <span class="slider-handle slider-handlemin" data-slider-handle role="slider" tabindex="1"><div class='small-2 columns value'>
+      <span id="talamin"></span>
+    </div></span>
+      <span class="slider-fill" data-slider-fill></span>
+      <span class="slider-handle slider-handlemax" data-slider-handle role="slider" tabindex="1"><span id="talamax"></span></span>
+      <input type="hidden">
+      <input type="hidden">
+    </div>
+    </div>
+
+
+          <h1 class="stafirsearch">Year</h1>
+
+
+      <div class="row">
+      <h1 class="byrjun2">1880</h1>
+      <h1>2017</h1>
+      </div>
+
+      <div class="column row">
+      <div class="slider" data-slider data-initial-start="0" data-initial-end="100">
+        <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+        <span class="slider-fill" data-slider-fill></span>
+        <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+        <input type="hidden">
+        <input type="hidden">
+      </div>
+      </div>
+
+
+      <h1 class="stafirsearch">Genre</h1>
+      <div class="row">
+        <div class="small-2 large-4 columns"><button class="btnG"  type="button" name="button">Action</button></div>
+        <div class="small-4 large-4 columns"><button class="btnG" type="button" name="button">Action</button></div>
+        <div class="small-6 large-4 columns"><button class="btnG"  type="button" name="button">Action</button></div>
+      </div>
+
+      <div class="row">
+        <div class="small-2 large-4 columns"><button class=" btnG"  type="button" name="button">Action</button></div>
+        <div class="small-4 large-4 columns"><button class="btnG" type="button" name="button">Action</button></div>
+        <div class="small-6 large-4 columns"><button class="btnG"  type="button" name="button">Action</button></div>
+      </div>
+      <div class="row1">
+        <div class="row">
+          <div class="small-2 large-4 columns"><button class="btnG" type="button" name="button">Action</button></div>
+          <div class="small-4 large-4 columns"><button class="btnG" type="button" name="button">Action</button></div>
+          <div class="small-6 large-4 columns"><button class="btnG"  type="button" name="button">Action</button></div>
+        </div>
+        <div class="row">
+          <div class="small-2 large-4 columns"><button class="btnG" type="button" name="button">Action</button></div>
+          <div class="small-4 large-4 columns"><button class="btnG" type="button" name="button">Action</button></div>
+          <div class="small-6 large-4 columns"><button class="btnG"  type="button" name="button">Action</button></div>
+        </div>
+      </div>
+      <div class="takkarshow">
+        <button class="seemore"type="button" name="button">Show more</button>
+        <button class="seeless"type="button" name="button">Show less</button>
+
+      </div>
+
+
+                <div class="Genre">
+      <div><button class="buttonGenre" type="button" name="button">Action</button></div>
+      <div><button class="buttonGenre" type="button" name="button">Animal</button></div>
+      <div><button class="buttonGenre"type="button" name="button">War</button></div>
+      <div><button class="buttonGenre" type="button" name="button">Doc</button></div>
+      <div><button  class="buttonGenre"type="button" name="button">Romance</button></div>
+      <div><button class="buttonGenre" type="button" name="button">Horror</button></div>
+
+      </div>
+      <div class="column row">
+      <button class="searchtakki" type="button" name="button">Search</button>
+      </div>
+          <a class="btn" id="seeMore">SEE MORE</a>
+          <a class="btn">Search</a>
+      </div>
+
+      </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" src="js/foundation.min.js"></script>
+  <script type="text/javascript" src="js/foundation.reveal.js"></script>
+  <script type="text/javascript" src="js/search.js"></script>
+  <script type="text/javascript" src="js/movieclass.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

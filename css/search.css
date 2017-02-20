@@ -1,0 +1,643 @@
+.search .container {
+    font-family: 'Roboto', sans-serif;
+}
+
+.search .stafirsearch {
+    font-family: 'Roboto', sans-serif;
+}
+
+.search .leit, .logo {
+    position: relative;
+}
+
+.search .leit {
+    float: right;
+    padding-top: 44px;
+    padding-right: 38px;
+}
+
+.search .logo {
+    padding-left: 24px;
+    padding-top: 27px;
+}
+
+.search .fyrirsogn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leit {
+    color: black;
+    opacity: 0.7;
+}
+
+.container {
+    max-width: 1107px;
+    margin: 0 auto;
+}
+
+.search {
+    height: 100vh;
+    min-width: 100%;
+    z-index: 1000;
+    background: white;
+    position: fixed;
+    top: 0;
+    display: flex;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    overflow: scroll;
+    background-color: #FAFAFA;
+}
+
+.search .container {
+    background-color: #FAFAFA;
+    display: none;
+}
+
+.leitainput {
+    padding-top: 70px;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    background-color: #FAFAFA;
+}
+
+.leitainput1 {
+    border: 0px;
+    outline: none;
+    box-shadow: 0px 0px 0px;
+    border-bottom: 1px solid #E7833B;
+    font-size: 5em;
+    font-family: "Oswald", sans-serif;
+    background-color: #FAFAFA;
+    padding: 5%;
+    color: lightslategray;
+}
+
+.leitainput1:focus {
+    border: 0px;
+    border-bottom: 1px;
+    outline: none;
+    box-shadow: 0px 0px 0px;
+    border-bottom: 1px solid #E7833B;
+    font-size: 5em;
+    font-family: "Oswald", sans-serif;
+    background-color: #FAFAFA;
+    color: lightslategray;
+}
+
+.advancedSearch {
+    text-align: center;
+    display: block;
+}
+
+.leitmynd {
+    width: 40.48px;
+    border-bottom: 1px solid #E7833B;
+    margin-bottom: 16px;
+}
+
+.stafirsearch {
+    font-size: 18px;
+    padding: 10px;
+    /* Rating */
+    /* Year */
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 100%;
+    color: #4F4F4F;
+    opacity: 1.00;
+    padding-bottom: 35px;
+}
+
+.slider {
+    width: 801px;
+}
+
+.slider-handle {
+    /* Ellipse 5 */
+    background: #FAA20E;
+    opacity: 1.00;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    left: 0%;
+    outline: none;
+}
+
+.slider-handle::before {
+    content: '';
+    position: absolute;
+    background: rgba(251, 162, 14, 0.3);
+    opacity: 1.00;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    top: -10px;
+    right: -10px;
+}
+
+.slider-handle::after {
+    content: '';
+    position: absolute;
+    background: #FAA71A;
+    opacity: 1.00;
+    border-radius: 4px;
+    transform: matrix(0, -1, 1, 0, 0, 0);
+    width: 58px;
+    height: 11px;
+    top: -4px;
+    right: 2px;
+}
+
+#talamin, #talamax {
+    position: absolute;
+    top: -100%;
+    left: -25%;
+    margin-left: 67%;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.search .slider-handle:active {
+    background: #FAA71A;
+}
+
+.search .slider-handle:hover {
+    background: #FAA71A;
+}
+
+.search .slider-fill {
+    background: #FAA20E;
+}
+
+.byrjun {
+    padding-right: 780px;
+}
+
+.buttonGenre {
+    /* Rectangle 8 */
+    opacity: 1.00;
+    border: 2px solid #E84B33;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    /* Adventure */
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 100%;
+    color: #E84B33;
+    opacity: 1.00;
+    display: block;
+    margin: 0 auto;
+    outline: none;
+}
+
+.btnG:hover {
+    /* Rectangle 8 */
+    background: #E84B33;
+    opacity: 1.00;
+    border-radius: 20px;
+    color: white;
+}
+
+.takkarshow {
+    float: right;
+    margin-top: 19px;
+    margin-right: 107px;
+}
+
+.searchtakki {
+    /* Rectangle 13 */
+    width: 300px;
+    height: 80px;
+    background: #E7833B;
+    opacity: 1.00;
+    border-radius: 10px;
+    /* Search */
+    margin-top: 50px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 100%;
+    color: #FFFFFF;
+    opacity: 1.00;
+}
+
+.searchtakki:hover {
+    /* Rectangle 13 */
+    width: 300px;
+    height: 80px;
+    /* Rectangle 13 */
+    background: #FAA71A;
+    opacity: 1.00;
+    border-radius: 8px;
+    color: white;
+}
+
+.leitainput {
+    display: flex;
+}
+
+.search .column {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+.search .row {
+    display: flex;
+    justify-content: center;
+    width: 1107px;
+}
+
+.search .row h1 {
+    /* 1888 */
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 100%;
+    color: #828282;
+    opacity: 1.00;
+    padding-bottom: 50px;
+}
+
+.byrjun2 {
+    padding-right: 760px;
+}
+
+.closeMe {
+    font-size: 70px;
+    float: right;
+    color: #E7833B;
+    padding-right: 70px;
+    cursor: pointer;
+}
+
+.seemore {
+    /* Rectangle 8 */
+    border: 2px solid #3D6390;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 165px;
+    height: 45px;
+    /* Show more */
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    color: #3D6390;
+}
+
+.seeless {
+    /* Rectangle 8 */
+    background: #3D6390;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 165px;
+    height: 45px;
+    /* Showless */
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    color: #fff;
+    display: none;
+}
+
+.search .row1 {
+    display: none;
+}
+
+.btnG {
+    margin: 20px;
+    opacity: 1.00;
+    border: 2px solid #E84B33;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    /* Adventure */
+    /* Adventure */
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 100%;
+    color: #E84B33;
+    opacity: 1.00;
+}
+
+.btnG1 {
+    /* Rectangle 8 */
+    background: #E84B33;
+    opacity: 1.00;
+    border-radius: 20px;
+    color: white;
+}
+
+.Genre {
+    display: none;
+}
+
+.searchResults {
+    height: 188px;
+    display: flex;
+    margin: 1% auto;
+    background-color: #fff;
+    /*box-shadow: 0px 0px 4px #000;*/
+    cursor: pointer;
+    border: 0px;
+    transition: .7s;
+}
+
+.searchResults:hover {
+    box-shadow: 0px 0px 6px lightgrey;
+    transition: .3s;
+}
+
+.searchResults img {
+    width: 14%;
+    margin: 22px;
+    height: auto;
+}
+
+.searchResults h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 1.95em;
+    color: #220D0B;
+}
+
+.searchResults p {
+    /* Paul Stephen Rudd was born in Passaic, New Jersey. His parents, Michael and Gloria, both from Jewish families... */
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    line-height: 110%;
+    color: #220D0B;
+    font-weight: 200;
+
+}
+
+.searchResults .searchInfo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 3%;
+}
+
+.shown {
+    display: block !important;
+}
+
+@media (max-width: 750px) {
+
+    .btn {
+        width: 45%;
+    }
+
+    /*search*/
+    .Genre {
+        display: block;
+    }
+    .takkarshow {
+        display: none;
+    }
+    .btnG {
+        display: none
+    }
+    .search {
+        display: none;
+    }
+
+    .leitainput1 {
+    background-color: #FFF;
+    }
+
+    .leitainput {
+    background-color: #fff;
+}
+
+    .container {
+        font-family: 'Roboto', sans-serif;
+    }
+    .stafirsearch {
+        font-family: 'Roboto', sans-serif;
+    }
+    .leit {
+        color: black;
+        opacity: 0.7;
+    }
+    .container {
+        max-width: 375px;
+        margin: 0 auto;
+    }
+    .search {
+        min-height: 100vh;
+        min-width: 100%;
+        z-index: 1000;
+        background: white;
+        position: fixed;
+        top: 0;
+        display: none;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .leitainput {
+        padding-top: 20px;
+    }
+    .leitainput1 {
+        border: 0px;
+        outline: none;
+        box-shadow: 0px 0px 0px;
+        border-bottom: 1px solid #E7833B;
+        font-size: 3em;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .leitainput1:focus {
+        border: 0px;
+        border-bottom: 1px;
+        outline: none;
+        font-family: "Roboto", sans-serif;
+        background-color: #fff;
+        font-size: 3em;
+        box-shadow: 0px 0px 0px;
+        border-bottom: 1px solid #E7833B;
+    }
+    .leitmynd {
+        width: 40.48px;
+        border-bottom: 1px solid #E7833B;
+        margin-bottom: 16px;
+    }
+    .stafirsearch {
+        font-size: 18px;
+        padding: 10px;
+    }
+    .slider {
+        width: 290px;
+    }
+    .slider-handle {
+        /* Ellipse 5 */
+        background: #FAA20E;
+        opacity: 1.00;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        left: 0%;
+    }
+    .slider-handle::before {
+        content: '';
+        position: absolute;
+        background: rgba(251, 162, 14, 0.3);
+        opacity: 1.00;
+        border-radius: 50%;
+        width: 41px;
+        height: 41px;
+        top: -6px;
+        right: -5px;
+    }
+    .slider-handle::after {
+        content: '';
+        position: absolute;
+        background: #FAA71A;
+        opacity: 1.00;
+        border-radius: 4px;
+        transform: matrix(0, -1, 1, 0, 0, 0);
+        width: 24px;
+        height: 5px;
+        top: -6px;
+        right: 4px;
+    }
+    .slider-handle:active {
+        background: #FAA71A;
+    }
+    .slider-handle:hover {
+        background: #FAA71A;
+    }
+    .slider-fill {
+        background: #FAA20E;
+    }
+    .byrjun {
+        padding-right: 220px;
+    }
+    .buttonGenre {
+        /* Rectangle 8 */
+        opacity: 1.00;
+        border: 2px solid #E84B33;
+        box-sizing: border-box;
+        border-radius: 20px;
+        padding: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        /* Adventure */
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 100%;
+        color: #E84B33;
+        opacity: 1.00;
+        display: block;
+        margin: 0px;
+    }
+    .buttonGenre:active {
+        /* Rectangle 8 */
+        background: #E84B33;
+        opacity: 1.00;
+        border-radius: 20px;
+    }
+    .searchtakki {
+        /* Rectangle 13 */
+        width: 185px;
+        height: 45px;
+        background: #E7833B;
+        opacity: 1.00;
+        border-radius: 8px;
+        /* Search */
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 100%;
+        color: #FFFFFF;
+        opacity: 1.00;
+    }
+    .searchtakki:hover {
+        /* Rectangle 13 */
+        width: 185px;
+        height: 45px;
+        /* Rectangle 13 */
+        background: #FAA71A;
+        opacity: 1.00;
+        border-radius: 8px;
+        color: white;
+    }
+    .leitainput {
+        display: flex;
+    }
+    .leitainput1 {
+        font-size: 3em;
+    }
+    .column {
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+    }
+    .row {
+        display: flex;
+        justify-content: center;
+        width: 290px;
+    }
+    .row h1 {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 100%;
+        color: #828282;
+        opacity: 1.00;
+    }
+    .byrjun {
+        padding-right: 260px;
+    }
+    .byrjun2 {
+        padding-right: 218px;
+    }
+    .closeMe {
+        font-size: 40px;
+        float: right;
+        color: #E7833B;
+        padding-right: 70px
+    }
+
+    .search .row {
+     width: 100%;
+    }
+
+    #main-content .slick-slide, .similarMoves .slick-slide {
+    width: 204px;
+     margin-right: 10px;
+    position: relative;
+    box-shadow: 0px 0px 20px #000;
+    transition: .4s;
+    cursor: pointer;
+    margin-bottom: 40px;
+    }
+}

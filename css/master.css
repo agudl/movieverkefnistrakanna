@@ -1,0 +1,560 @@
+body {
+    width: 100%;
+    font-family: sans-serif;
+    background-color: #FEFEFE;
+    overflow: hidden;
+}
+
+.btn {
+    margin: 4% auto;
+    display: flex;
+    align-items: center;
+    width: 12%;
+    justify-content: center;
+    height: 60px;
+    background-color: #F2994A;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 10px;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+.navigation {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    transition: .3s;
+}
+
+.logo {
+    float: left;
+    margin: 1%;
+    fill: #fff;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.searchlogo {
+    width: 60px;
+    float: right;
+    margin: 2%;
+    fill: #fff;
+    z-index: 999;
+    transition: .8s;
+    cursor: pointer;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg, #FAA20E 56.67%, #E7833B 84.44%);
+    opacity: 1.00;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    font-family: "Oswald";
+    color: #FFFFFF;
+    transition: .3s;
+}
+
+.banner h2 {
+    font-size: 4.9em;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+    color: #FFFFFF;
+    font-family: "Oswald";
+}
+
+.banner h3 {
+    font-weight: 300;
+    font-size: 2.9em;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+    font-family: "Oswald";
+}
+
+.banner .playButton {
+    display: none;
+}
+
+.banner #playClick:hover {
+    cursor: pointer;
+    fill: #000;
+}
+
+.banner .bannerPolygon {
+    background-color: #fff;
+    -webkit-clip-path: polygon(100% 76%, 0 100%, 100% 100%);
+    clip-path: polygon(100% 76%, 0 100%, 100% 100%);
+    width: 100%;
+    position: absolute;
+    bottom: -1%;
+    height: 80%;
+    display: none;
+}
+
+header:after {
+    height: 80vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #000;
+}
+
+.vote-circle span {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #FFFFFF;
+}
+
+.loading {
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    background: linear-gradient(180deg, #FAA20E 56.67%, #E7833B 84.44%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    display: none;
+    transition: .005s;
+}
+
+.loadingIcon {
+    margin: 4% auto;
+    display: block;
+    width: 10%;
+}
+
+.searchCircle {
+    position: fixed;
+    top: -15%;
+    right: -800%;
+    width: 300px;
+    background: linear-gradient(180deg, #FAA20E 56.67%, #E7833B 84.44%);
+    z-index: 998;
+    height: 300px;
+    border-radius: 100%;
+    transition: .3s;
+}
+
+section {
+    margin-left: 8%;
+    margin-top: 5%;
+}
+
+section .genreHeading {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 100%;
+    color: #4F4F4F;
+    opacity: 1.00;
+    margin-bottom: 3%;
+}
+
+#main-content .slick-slide, .similarMoves .slick-slide {
+    width: 250px;;
+    margin-right: 70px;
+    position: relative;
+    box-shadow: 0px 0px 20px #000;
+    transition: .4s;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+#main-content .slick-slide:hover {
+    box-shadow: 0px 0px 25px #000;
+    transition: .4s;
+    width: 270px;
+}
+
+#main-content .slick-slide img {
+    width: 100%;
+}
+
+#main-content .slick-slider button {
+    display: none;
+}
+
+.slick-arrow {
+    background-color: rgba(255, 255, 255, 0.0);
+    height: 100%;
+    width: 5%;
+    z-index: 997;
+}
+
+.slick-next {
+    right: 0px;
+    display: block;
+}
+
+.slick-prev {
+    left: 0px;
+    display: none;
+}
+
+.slick-arrow:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 40px;
+}
+
+.slick-slide .vote-circle {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(180deg, #FAA20E 56.67%, #E7833B 84.44%);
+    color: #fff;
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .8em;
+    z-index: 999;
+    box-shadow: 0px 0px 6px #000;
+}
+
+.infoBox {
+    position: absolute;
+    bottom: 0;
+    height: 30%;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    transition: .3s;
+}
+
+.infoBox h3 {
+    text-align: left;
+    margin-left: 10%;
+    font-size: 1.8em;
+    width: 80%;
+    margin-top: 4%;
+    font-family: "Oswald";
+    line-height: 100%;
+    color: #4F4F4F;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+}
+
+.infoBox p {
+    font-family: "Roboto Condensed";
+    font-size: 14px;
+    color: #3D6390;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.infoBox ul:first-child li {
+    font-size: 1.7em;
+}
+
+.movieDiv .moviePoster {
+    width: 300px;
+    position: absolute;
+    bottom: -30%;
+    left: 9%;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 25px #000;
+}
+
+.movieDiv .vote-circle {
+    width: 100px;
+    height: 100px;
+    background-color: #E7833B;
+    color: #fff;
+    position: absolute;
+    bottom: 16%;
+    right: 8%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+}
+
+.movieDiv .basicInfo {
+    margin-top: 5%;
+}
+
+.movieDiv .basicInfo h1 {
+    font-family: "Oswald";
+    font-size: 4.2em;
+    line-height: 95%;
+    color: #4F4F4F;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+}
+
+.movieDiv .basicInfo h3 {
+    font-family: "Roboto Condensed";
+    font-size: 2.4em;
+    color: #3D6390;
+}
+
+.movieDiv .basicInfo ul {
+    margin-left: 0px;
+}
+
+.movieDiv .basicInfo ul li, .movieDiv .movieDetails ul li {
+    list-style: none;
+    font-family: "Roboto Condensed";
+    font-size: 1.5em;
+    color: #4F4F4F;
+
+}
+
+.movieDiv .movieDetails {
+}
+
+.movieDiv .movieDetails div ul {
+    margin-top: 5%;
+    margin-left: 0px;
+}
+
+.movieDiv .movieStoryline {
+    width: 40%;
+}
+
+.movieDiv .movieStoryline p {
+    font-family: "Roboto Condensed";
+    font-size: 1.4em;
+    line-height: 113%;
+    color: #4F4F4F;
+    font-weight: 300;
+}
+
+.movieDiv .movieDetails ul li {
+    float: left;
+    padding-right: 1%;
+}
+
+.movieDiv .movieStoryline h2 {
+    font-family: "Oswald";
+    font-size: 2.5em;
+    color: #4F4F4F;
+}
+
+.movieDiv .slick-slider {
+    margin-top: .5%;
+}
+
+.movieDiv section h2, .movieDiv section h3 {
+    font-family: "Oswald", sans-serif;;
+    font-size: 2.6em;
+    color: #4F4F4F;
+    margin-bottom: 1%;
+
+}
+
+.movieDiv section .slick-slide {
+    margin-right: 5px;
+    width: 200px;
+    outline: none;
+}
+
+.movieDiv section .slick-slide img {
+    height: 300px;
+    width: 100%;
+}
+
+.movieDiv section .slick-slide h2 {
+    margin-top: 5%;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.movieDiv section .slick-slide h3 {
+    font-size: .8em;
+}
+
+.movieDiv section .slick-slide h2, .movieDiv section .slick-slide h3 {
+    font-family: "Roboto Condensed", sans-serif;
+    width: 95%;
+    margin-left: 6%;
+    text-align: center;
+    margin-bottom: -1px;
+}
+
+.similarImg {
+    cursor: pointer;
+}
+
+.reveal {
+    width: 80%;
+    height: 80%;
+    z-index: 1006;
+    padding: 0rem;
+    border: 0px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    overflow-y: hidden;
+    outline: none;
+}
+
+.reveal-overlay {
+    background-color: rgba(10, 10, 10, 0.9);
+}
+
+.none {
+    display: none;
+}
+
+footer {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(180deg, #FAA20E 50%, #E7833B 85.88%);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+footer ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+footer ul li {
+    padding-right: 2%;
+    list-style: none;
+    color: #fff;
+    font-family: "Oswald";
+    font-weight: 300;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.movieDiv section:last-child .slick-slide{
+    width: 250px;;
+    margin-right: 20px;
+    position: relative;
+    box-shadow: 0px 0px 20px #000;
+    transition: .3s;
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+
+.movieDiv section:last-child .slick-slide:hover {
+    width: 260px;
+    transition: .3s;
+}
+
+.movieDiv section:last-child .slick-slide img{
+    height: auto;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        font-size: 90%;
+    }
+
+    .logo {
+        width: 30%;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+
+    .navigation .searchlogo {
+        top: 7%;
+        right: 7%;
+        width: 15%;
+    }
+
+    .movieDiv .moviePoster {
+    width: 200px;
+    bottom: 0%;
+    }
+
+    .movieDiv .vote-circle {
+    width: 70px;
+    height: 70px;
+    bottom: 18%;
+}
+
+.banner .bannerText {
+    font-size: 80%;
+    margin-top: 46px;
+}
+
+
+    .infoBox {
+        height: 30%;
+        display: none;
+    }
+
+    .slick-slide {
+        margin-right: 10px;
+        box-shadow: 0px 0px 0px #fff;
+    }
+
+    #main-content .slick-slide:hover {
+        box-shadow: 0px 0px 25px #000;
+        transition: .4s;
+        width: 200px;
+    }
+
+    .searchCircle {
+        position: fixed;
+        top: auto;
+        bottom: 3%;
+        right: 3%;
+        width: 60px;
+        background: linear-gradient(180deg, #FAA20E 56.67%, #E7833B 84.44%);
+        z-index: 998;
+        height: 60px;
+        border-radius: 100%;
+        transition: .3s;
+        box-shadow: 0px 0px 10px 0px #000;
+        }
+
+    .search .leitainput {
+        width: 90%;
+    }
+
+    .search .closeMe {
+        padding-right: 24px;
+    }
+
+    .search .searchResults {
+    height: 100px;
+    margin: 3% auto;
+    font-size: 55%;
+    }
+
+    .search .searchResults .searchInfo {
+        margin-left: 5%;
+    }
+
+    .movieDiv .moviePoster {
+    bottom: -5%;
+    }
+
+    .movieDiv .basicInfo {
+    margin-top: 41%;
+    text-align: center;
+    }
+
+    .movieDiv .movieStoryline {
+    width: 95%;
+    margin-left: 2%;
+    text-align: center;
+    }
+}

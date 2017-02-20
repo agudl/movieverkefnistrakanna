@@ -1,0 +1,34 @@
+<svg width="29" height="28" viewBox="0 0 29 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>LEIT</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-322 1499)" figma:type="canvas">
+<g id="LEIT" style="mix-blend-mode:normal;" opacity="0.8" filter="url(#filter0_d)" figma:type="frame">
+<g id="Ellipse" style="mix-blend-mode:normal;" figma:type="ellipse">
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="matrix(0.994648 -0.10317 0.102891 0.994708 325.404 -1495.89)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="matrix(0.994648 -0.10317 0.102891 0.994708 325.404 -1495.89)" fill="#220D0B" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Line 2" style="mix-blend-mode:normal;" figma:type="line">
+<use xlink:href="#path2_stroke" transform="matrix(0.735336 0.677783 -0.676695 0.73619 337.865 -1483.98)" fill="#220D0B" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d" filterUnits="userSpaceOnUse" x="322" y="-1499" width="29" height="28" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<desc>type="dropShadow" x="0" y="2" size="4" spread="0" color="0,0,0,0.25" blend="normal"</desc>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+<feOffset dx="0" dy="2"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<path id="path0_fill" d="M 14.7881 7.40384C 14.7881 11.4929 11.4777 14.8077 7.39405 14.8077C 3.31043 14.8077 0 11.4929 0 7.40384C 0 3.31481 3.31043 0 7.39405 0C 11.4777 0 14.7881 3.31481 14.7881 7.40384Z"/>
+<path id="path1_stroke_2x" d="M 12.7881 7.40384C 12.7881 10.3908 10.3706 12.8077 7.39405 12.8077L 7.39405 16.8077C 12.5847 16.8077 16.7881 12.5949 16.7881 7.40384L 12.7881 7.40384ZM 7.39405 12.8077C 4.41749 12.8077 2 10.3908 2 7.40384L -2 7.40384C -2 12.5949 2.20337 16.8077 7.39405 16.8077L 7.39405 12.8077ZM 2 7.40384C 2 4.41689 4.41749 2 7.39405 2L 7.39405 -2C 2.20337 -2 -2 2.21274 -2 7.40384L 2 7.40384ZM 7.39405 2C 10.3706 2 12.7881 4.41689 12.7881 7.40384L 16.7881 7.40384C 16.7881 2.21274 12.5847 -2 7.39405 -2L 7.39405 2Z"/>
+<path id="path2_stroke" d="M 1 -2C 0.447715 -2 0 -1.55228 0 -1C 0 -0.447715 0.447715 0 1 0L 1 -2ZM 8.922 0C 9.47429 0 9.922 -0.447715 9.922 -1C 9.922 -1.55228 9.47429 -2 8.922 -2L 8.922 0ZM 1 0L 8.922 0L 8.922 -2L 1 -2L 1 0Z"/>
+</defs>
+</svg>
